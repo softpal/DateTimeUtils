@@ -3,6 +3,8 @@
 ### Developed by
 [Softpal](https://www.github.com/softpal)
 
+[![](https://jitpack.io/v/softpal/DateTimeUtils.svg)](https://jitpack.io/#softpal/DateTimeUtils)
+
 
 **Features**
 
