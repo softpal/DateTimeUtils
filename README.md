@@ -19,14 +19,22 @@ Get difference between two given dates with time.
 ## Installation
 
 Add repository url and dependency in application module gradle file:
-
+  
 	allprojects {
 		repositories {
 			...
 			maven { url 'https://jitpack.io' }
 		}
 	}
-
+	
+Add maven-gradle-plugin in project level gradle file:
+    ```javascript
+    dependencies {
+        classpath 'com.github.dcendents:android-maven-gradle-plugin:2.1'
+    }
+    ```
+    
+    
 ### Gradle
 [![](https://jitpack.io/v/softpal/DateTimeUtils.svg)](https://jitpack.io/#softpal/DateTimeUtils)
 ```javascript
