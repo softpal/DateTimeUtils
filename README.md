@@ -26,14 +26,6 @@ Add repository url and dependency in application module gradle file:
 			maven { url 'https://jitpack.io' }
 		}
 	}
-  
-  	dependencies {
-	      implementation 'com.github.softpal:ImagesPreview:1.2'
-	}
-
-
-## Setup
-
 
 ### Gradle
 [![](https://jitpack.io/v/softpal/DateTimeUtils.svg)](https://jitpack.io/#softpal/DateTimeUtils)(https://bintray.com/tkdrnjs0912/maven/tedbottompicker/_latestVersion)
