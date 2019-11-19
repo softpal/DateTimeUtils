@@ -28,7 +28,7 @@ Add repository url and dependency in application module gradle file:
 	}
 
 ### Gradle
-[![](https://jitpack.io/v/softpal/DateTimeUtils.svg)](https://jitpack.io/#softpal/DateTimeUtils)(https://bintray.com/tkdrnjs0912/maven/tedbottompicker/_latestVersion)
+[![](https://jitpack.io/v/softpal/DateTimeUtils.svg)](https://jitpack.io/#softpal/DateTimeUtils)
 ```javascript
 dependencies {
     implementation 'com.github.softpal:DateTimeUtils:1.0'
