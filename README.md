@@ -27,13 +27,6 @@ Add repository url and dependency in application module gradle file:
 		}
 	}
 	
-Add maven-gradle-plugin in project level gradle file
-
-```javascript
-    dependencies {
-        classpath 'com.github.dcendents:android-maven-gradle-plugin:2.1'
-}
-```
     
     
 ### Gradle
