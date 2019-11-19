@@ -37,6 +37,7 @@ dependencies {
 
 
 ## Usage
+
 ### 1. Get Ago Time
 
 ```javascript
@@ -44,6 +45,8 @@ dependencies {
        DateTimeUtils.getTimeAgo("19 Nov 2019 11:34:45:984");
 ```
 Output : **5 hours ago**
+
+
 
 
 ### 2. Get Current Date
@@ -54,12 +57,16 @@ Output : **5 hours ago**
 Output : **11-19-2019**
 
 
+
+
 ### 3. Get Current Date Time with Slashes
 
 ```javascript
        DateTimeUtils.getCurrentDateTimeWithSlashes();
 ```
 Output : **2019/11/19 17:12:47**
+
+
 
 
 ### 4. Get Difference between Two Dates
