@@ -8,11 +8,11 @@
 
 **Features**
 
-Current Date. <br>
-Ago Time. <br>
-Current Date & Time in Required format. <br>
-Current Year. <br>
-Time Conversion 12 hours to 24 hours with date. <br>
+Get Current Date and Time. <br>
+Convert DateTime to Ago Time. <br>
+Get Current Date & Time in Required format. <br>
+Get Current Year. <br>
+Convert time between 12 hours and 24 hours format. <br>
 Get difference between two given dates with time.
 
 
