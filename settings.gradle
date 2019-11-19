@@ -1,0 +1,2 @@
+include ':app', ':datetimeutils'
+rootProject.name='DateTimeUtilities'
