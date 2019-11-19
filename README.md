@@ -16,6 +16,66 @@ Convert time between 12 hours and 24 hours format. <br>
 Get difference between two given dates with time.
 
 
-## Usage
-**1. Start by calling methods in DateTimeUtils.**
+## Installation
 
+Add repository url and dependency in application module gradle file:
+
+	allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+  
+  	dependencies {
+	      implementation 'com.github.softpal:ImagesPreview:1.2'
+	}
+
+
+## Setup
+
+
+### Gradle
+[![](https://jitpack.io/v/softpal/DateTimeUtils.svg)](https://jitpack.io/#softpal/DateTimeUtils)(https://bintray.com/tkdrnjs0912/maven/tedbottompicker/_latestVersion)
+```javascript
+dependencies {
+    implementation 'com.github.softpal:DateTimeUtils:1.0'
+}
+```
+
+
+## Usage
+### 1. Get Ago Time
+
+```javascript
+        // Call the method by passing date in required format
+       DateTimeUtils.getTimeAgo("19 Nov 2019 11:34:45:984");
+```
+Output : **5 hours ago**
+
+
+### 2. Get Current Date
+
+```javascript
+       DateTimeUtils.getCurrentDate();
+```
+Output : **11-19-2019**
+
+
+### 3. Get Current Date Time with Slashes
+
+```javascript
+       DateTimeUtils.getCurrentDateTimeWithSlashes();
+```
+Output : **2019/11/19 17:12:47**
+
+
+### 4. Get Difference between Two Dates
+
+```javascript
+        //date format should be in MM/dd/yyyy HH:mm:ss
+       String startDate = "01/01/2019 02:05:00";
+       String endDate = "01/01/2020 05:06:56";
+       String differenceTime = DateTimeUtils.diffBetweenDates(startDate,endDate);
+```
+Output : **365 days 3:1:56**
