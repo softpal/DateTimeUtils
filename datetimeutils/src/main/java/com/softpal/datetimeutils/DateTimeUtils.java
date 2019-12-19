@@ -6,6 +6,7 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.Locale;
 import java.util.concurrent.TimeUnit;
 
 public class DateTimeUtils
@@ -15,7 +16,7 @@ public class DateTimeUtils
 		String agoTime = "";
 		try
 		{
-			SimpleDateFormat format = new SimpleDateFormat("dd MMM yyyy HH:mm:ss:SSS");
+			SimpleDateFormat format = new SimpleDateFormat("dd MMM yyyy HH:mm:ss:SSS",new Locale("en"));
 			Date past = format.parse(uploadDate);
 			
 			Date now = new Date();
@@ -54,7 +55,7 @@ public class DateTimeUtils
 	public static String getCurrentDate()
 	{
 		Calendar c = Calendar.getInstance();
-		SimpleDateFormat df = new SimpleDateFormat("MM-dd-yyyy");
+		SimpleDateFormat df = new SimpleDateFormat("MM-dd-yyyy",new Locale("en"));
 		return df.format(c.getTime());
 	}
 	
@@ -62,40 +63,40 @@ public class DateTimeUtils
 	public static String getCurrentDateTimeWithDashes()
 	{
 		Calendar c = Calendar.getInstance();
-		SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+		SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss",new Locale("en"));
 		return df.format(c.getTime());
 	}
 	
 	public static String getCurrentDateTimeWithSlashes()
 	{
 		Calendar c = Calendar.getInstance();
-		SimpleDateFormat df = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
+		SimpleDateFormat df = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss",new Locale("en"));
 		return df.format(c.getTime());
 	}
 	
 	public static String getCurrentYear()
 	{
 		Calendar c = Calendar.getInstance();
-		SimpleDateFormat df = new SimpleDateFormat("yyyy");
+		SimpleDateFormat df = new SimpleDateFormat("yyyy",new Locale("en"));
 		return df.format(c.getTime());
 	}
 	
 	public static String formatDateTime(Date date)
 	{
-		SimpleDateFormat df = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
+		SimpleDateFormat df = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss",new Locale("en"));
 		return df.format(date);
 	}
 	
 	public static String formatDate(Date date)
 	{
-		SimpleDateFormat df = new SimpleDateFormat("dd MMM yyyy HH:mm:ss:SSS");
+		SimpleDateFormat df = new SimpleDateFormat("dd MMM yyyy HH:mm:ss:SSS",new Locale("en"));
 		return df.format(date);
 	}
 	
 	public static String timeConversionTo24hours(String time12hours)
 	{
-		SimpleDateFormat displayFormat = new SimpleDateFormat("MM/dd/yyyy HH:mm:ss");
-		SimpleDateFormat parseFormat = new SimpleDateFormat("MM/dd/yyyy hh:mm:ss a");
+		SimpleDateFormat displayFormat = new SimpleDateFormat("MM/dd/yyyy HH:mm:ss",new Locale("en"));
+		SimpleDateFormat parseFormat = new SimpleDateFormat("MM/dd/yyyy hh:mm:ss a",new Locale("en"));
 		Date date = null;
 		try
 		{
@@ -114,7 +115,7 @@ public class DateTimeUtils
 		String dateStop = StringUtils.isEmpty(endDate) ? "01/01/2019 00:00:00" : endDate;
 		
 		// HH converts hour in 24 hours format (0-23), day calculation
-		SimpleDateFormat format = new SimpleDateFormat("MM/dd/yyyy HH:mm:ss");
+		SimpleDateFormat format = new SimpleDateFormat("MM/dd/yyyy HH:mm:ss",new Locale("en"));
 		
 		Date d1 = null;
 		Date d2 = null;
@@ -143,7 +144,7 @@ public class DateTimeUtils
 	public static String getCurrentDateTimeWithSlashesInMMddyyyyHHmmss()
 	{
 		Calendar c = Calendar.getInstance();
-		SimpleDateFormat df = new SimpleDateFormat("MM/dd/yyyy HH:mm:ss");
+		SimpleDateFormat df = new SimpleDateFormat("MM/dd/yyyy HH:mm:ss",new Locale("en"));
 		return df.format(c.getTime());
 	}
 	
