@@ -59,6 +59,13 @@ public class DateTimeUtils
 		return df.format(c.getTime());
 	}
 	
+	public static String getCurrentDateInYYYYmmdd()
+	{
+		Calendar c = Calendar.getInstance();
+		SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd",new Locale("en"));
+		return df.format(c.getTime());
+	}
+	
 	//This is the main - Approved Date Time Format
 	public static String getCurrentDateTimeWithDashes()
 	{
